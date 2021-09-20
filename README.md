@@ -1,4 +1,6 @@
-  # TASK STATEMENT 
+ task by stuti jain
+ 
+ # TASK STATEMENT 
  You are requested to make a single UAV follow a pre-planned Trajectory on Ardupilot SITL such that it goes to a Specified Drop Location, drops a Payload and Returns back to Its Take-off Location. At the payload drop, a servo motor is flicked as a confirmation for successful mission.
  
   # TASK DETAILS  
