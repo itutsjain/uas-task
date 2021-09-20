@@ -32,12 +32,17 @@ As soon as the UAV reaches the desired co-ordinates for the payload drop, the pr
        pip install dronekit-sitl -UI
        git clone http://github.com/dronekit/dronekit-python.git
 4. Ardupilot installation
+    on terminal
       sudo apt-get update
       sudo apt-get install git
       sudo apt-get install gitk git-gui
       git clone https://github.com/ArduPilot/ardupilot
       cd ardupilot
       git submodule update --init --recursive
+      Tools/environment_install/install-prereqs-ubuntu.sh -y
+      . ~/.profile
+      docker build . -t ardupilot
+      docker run --rm -it -v `pwd`:/ardupilot ardupilot:latest bash
      
      
 
