@@ -92,8 +92,8 @@ vehicle = connect('127.0.0.1:14550', wait_ready=True)
       lat2 = radians(lat2)
       a = sin(dLat/2)**2 + cos(lat1)*cos(lat2)*sin(dLon/2)**2
       c = 2*asin(sqrt(a))
-      return (rad(90) + c) 
-      ```
+    return (rad(90) + c) 
+```
 ##### for finding the distance
 
 ```def get_distance_metres(aLocation1, aLocation2):
@@ -101,7 +101,7 @@ vehicle = connect('127.0.0.1:14550', wait_ready=True)
     dlat = aLocation2.lat - aLocation1.lat
     dlong = aLocation2.lon - aLocation1.lon
     return math.sqrt((dlat*dlat) + (dlong*dlong)) * 1.113195e5 
-    ```
+```
 		
 ##### for sending value to arduino
 ```ArduinoUnoSerial = serial.Serial('com15',9600)       #Create Serial port object called ArduinoUnoSerialData time.sleep(2)                                                             #wait for 2 secounds for the communication to get established
